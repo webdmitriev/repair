@@ -141,7 +141,7 @@ $url = get_template_directory_uri();
           <img class="image-03" src="<?= $url; ?>/assets/img/block-05/image-03.png" alt="alto" />
         </div>
         <div class="block-content">
-          <span class="block-content__gift">в подарок</span>
+          <span class="block-content__gift">в&nbsp;подарок</span>
           <span class="block-content__title">СКИДКА 10%</span>
           <span class="block-content__subtitle">Вызовите мастера уже сейчас</span>
           <span class="block-content__descr">Напишите свой номер телефона и забронируйте мастера</span>
