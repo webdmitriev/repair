@@ -178,5 +178,38 @@ $url = get_template_directory_uri();
     </div>
   </section>
 
+  <section class="block-07 pos-r w-100p z-section" id="block-06">
+    <div class="container">
+      <div class="block__title pos-r df-sp-ce w-100p" data-title="Отзывы клиентов">
+        <h2 class="h2">Отзывы клиентов</h2>
+        <a href="#" class="btn btn-accent">Посмотреть все</a>
+      </div>
+
+      <div class="block__reviews">
+        <div class="block__review">
+          <div class="block__review-top"><span class="block__review-name">Анна Сергеевна</span></div>
+          <span class="block__review-title">Стиралка встала посреди цикла</span>
+          <span class="block__review-descr">Огромное спасибо мастеру! Стиралка встала посреди цикла, а у меня маленький ребенок, горы белья. Мастер приехал буквально за час, хотя я звонила вечером. Все быстро починил, цену назвал сразу и не накрутил лишнего. Очень рада, что на Мамайке есть такой надежный специалист!</span>
+        </div>
+        <div class="block__review">
+          <div class="block__review-top"><span class="block__review-name">Анна Сергеевна</span></div>
+          <span class="block__review-title">Стиралка встала посреди цикла</span>
+          <span class="block__review-descr">Огромное спасибо мастеру! Стиралка встала посреди цикла, а у меня маленький ребенок, горы белья. Мастер приехал буквально за час, хотя я звонила вечером. Все быстро починил, цену назвал сразу и не накрутил лишнего. Очень рада, что на Мамайке есть такой надежный специалист!</span>
+        </div>
+        <div class="block__review">
+          <div class="block__review-top"><span class="block__review-name">Анна Сергеевна</span></div>
+          <span class="block__review-title">Стиралка встала посреди цикла</span>
+          <span class="block__review-descr">Огромное спасибо мастеру! Стиралка встала посреди цикла, а у меня маленький ребенок, горы белья. Мастер приехал буквально за час, хотя я звонила вечером. Все быстро починил, цену назвал сразу и не накрутил лишнего. Очень рада, что на Мамайке есть такой надежный специалист!</span>
+        </div>
+        <div class="block__review">
+          <div class="block__review-top"><span class="block__review-name">Анна Сергеевна</span></div>
+          <span class="block__review-title">Стиралка встала посреди цикла</span>
+          <span class="block__review-descr">Огромное спасибо мастеру! Стиралка встала посреди цикла, а у меня маленький ребенок, горы белья. Мастер приехал буквально за час, хотя я звонила вечером. Все быстро починил, цену назвал сразу и не накрутил лишнего. Очень рада, что на Мамайке есть такой надежный специалист!</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 <?php
 get_footer();
