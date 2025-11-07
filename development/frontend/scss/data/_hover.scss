@@ -4,4 +4,8 @@
 
   // **********
   // components
+  .btn:hover {
+    color: var(--accent-color);
+    background-color: transparent;
+  }
 }

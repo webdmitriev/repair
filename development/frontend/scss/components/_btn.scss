@@ -1,0 +1,30 @@
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: max-content;
+  padding: 8px 18px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: var(--brs-buttons);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &.icon-btn-arrow-01:after {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;
+    background: url("../img/icons/icon-btn-arrow-01.svg") center / contain no-repeat;
+  }
+  &.btn-variant-01 {
+  }
+}
