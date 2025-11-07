@@ -106,5 +106,30 @@ $url = get_template_directory_uri();
     </div>
   </section>
 
+  <section class="block-04 pos-r w-100p z-section" id="block-04">
+      <div class="container">
+        <div class="block__title pos-r df-sp-ce w-100p" data-title="Стоимость работ">
+          <h2 class="h2">Честные и понятные цены</h2>
+          <a href="#" class="btn btn-accent">add</a>
+        </div>
+
+        <div class="line-wrap df-fe-fs w-100p">
+          <div class="block-content">
+            <p class="text">Мы называем стоимость сразу — никаких сюрпризов после ремонта. Диагностика бесплатна при заказе ремонта.</p>
+
+            <div class="block-line df-sp-fs w-100p">
+              <span class="block-line__label">label</span>
+              <span class="block-line__value">value</span>
+            </div>
+
+            <button class="btn btn-gradient btn-popup-call">Вызвать мастера</button>
+          </div>
+          <div class="block-image">
+            <img src="https://stiralka-mamayka.ru/wp-content/uploads/2025/10/image-01-1.jpg" alt="alto" class="block-image__img" />
+          </div>
+        </div>
+      </div>
+  </section>
+
 <?php
 get_footer();
