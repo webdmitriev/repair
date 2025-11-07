@@ -1,11 +1,104 @@
 @media (hover: hover) and (pointer: fine) {
   // ******
   // header
+  .header .header-button:hover {
+    color: var(--hover-menu);
+    &:after {
+      background-color: var(--hover-menu);
+    }
+  }
+
+  .header .header-menu .menu-item a:hover {
+    color: var(--hover-menu);
+  }
 
   // **********
   // components
-  .btn:hover {
-    color: var(--accent-color);
-    background-color: transparent;
+  .btn:not(.btn-accent, .btn-gradient):hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  .btn.btn-accent:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
+  .btn.btn-gradient:hover:before {
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+  }
+
+  // ********
+  // block-02
+  .block-02 .post-items .post-item:hover {
+    .post-item__content {
+      top: -20px;
+      height: calc(100% + 40px);
+    }
+    .post-item__content .post-title {
+      max-width: calc(100% - 60px);
+      animation: post-title 0.4s ease forwards;
+    }
+    .post-item__content:after {
+      opacity: 0.7;
+    }
+    .post-item__content .btn {
+      opacity: 1;
+    }
+    .post-item__content .post-link {
+      opacity: 0.7;
+    }
+  }
+  .block-02 .post-items .post-item .post-item__content .post-link:hover {
+    opacity: 1;
+  }
+
+  // ********
+  // block-07
+  .block-07 .block__reviews .block__review:hover {
+    padding-top: 4px;
+    border-color: transparent;
+    &:before {
+      top: -20px;
+      height: calc(100% + 40px);
+      opacity: 0.8;
+    }
+    .block__review-top {
+      margin-bottom: 60px;
+    }
+    .block__review-date,
+    .block__review-descr,
+    .block__review-name,
+    .block__review-title {
+      color: var(--white-color);
+    }
+  }
+
+  // ********
+  // block-11
+  .block-11 .block:hover:after {
+    opacity: 0.7;
+  }
+}
+
+@keyframes post-title {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    position: absolute;
+    top: 36px;
+    left: 28px;
+    opacity: 0;
+  }
+  100% {
+    position: absolute;
+    top: 36px;
+    left: 28px;
+    opacity: 1;
   }
 }
