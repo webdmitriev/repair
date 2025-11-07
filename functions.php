@@ -49,8 +49,8 @@ function webdmitriev_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'webdmitriev' ),
-			'lang-menu' => esc_html__( 'En menu', 'webdmitriev' ),
+			'header-menu' => esc_html__( 'Header menu', 'webdmitriev' ),
+			'header-menu-single' => esc_html__( 'Header menu single', 'webdmitriev' ),
 			'footer-menu' => esc_html__( 'Footer menu', 'webdmitriev' ),
 		)
 	);
