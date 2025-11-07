@@ -2,32 +2,12 @@
   display: block;
   width: 100%;
   font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 52px;
-  line-height: var(--font-height);
+  font-weight: var(--h1-fw);
+  font-size: var(--h1-fz);
+  line-height: var(--h1-lh);
   font-variant: small-caps;
   color: var(--white-color);
   b {
     font-weight: 500;
-  }
-}
-
-@media (max-width: 991px) {
-  .h1 {
-    font-size: 44px;
-  }
-}
-@media (max-width: 768px) {
-  .h1 {
-    font-size: 36px;
-  }
-}
-@media (max-width: 576px) {
-}
-@media (max-width: 460px) {
-}
-@media (max-width: 400px) {
-  .h1 {
-    font-size: 32px;
   }
 }

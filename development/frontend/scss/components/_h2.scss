@@ -3,8 +3,8 @@
   display: block;
   width: 100%;
   font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.4;
+  font-weight: var(--h2-fw);
+  font-size: var(--h2-fz);
+  line-height: var(--h2-lh);
   color: var(--black-color);
 }

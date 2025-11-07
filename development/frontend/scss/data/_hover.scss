@@ -15,14 +15,14 @@
   // **********
   // components
   .btn:not(.btn-accent, .btn-gradient):hover {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: var(--hover-btn-white);
+    border-color: var(--hover-btn-white);
   }
 
   .btn.btn-accent:hover {
     color: var(--white-color);
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
+    background-color: var(--hover-btn-white);
+    border-color: var(--hover-btn-white);
   }
 
   .btn.btn-gradient:hover:before {
