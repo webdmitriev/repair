@@ -21,7 +21,7 @@ $url = get_template_directory_uri();
     <div class="container"><address class="address-icon">Мамайка, г. Сочи</address></div>
   </main>
 
-  <section class="block-02 pos-r w-100p" id="block-02">
+  <section class="block-02 pos-r w-100p z-section" id="block-02">
     <div class="container">
       <div class="block__title pos-r df-sp-ce w-100p" data-title="title">
         <h2 class="h2">title</h2>
@@ -30,7 +30,8 @@ $url = get_template_directory_uri();
 
       <div class="post-items">
         <div class="post-item">
-          <div class="post-item__content" style="background: url('<?= $url; ?>/assets/img/block-01/bg-1920.jpg') center / cover no-repeat;">
+          <img class="post-item__image" src="<?= $url; ?>/assets/img/block-03/image-01.jpg" alt="alto" />
+          <div class="post-item__content">
             <a href="#"><h3 class="post-title">Title</h3></a>
             <button class="btn btn-popup-call-master">Вызвать мастера</button>
             <a href="#" class="post-excerpt">excerpt</a>
@@ -38,7 +39,8 @@ $url = get_template_directory_uri();
           </div>
         </div>
         <div class="post-item">
-          <div class="post-item__content" style="background: url('<?= $url; ?>/assets/img/block-01/bg-1920.jpg') center / cover no-repeat;">
+          <img class="post-item__image" src="<?= $url; ?>/assets/img/block-03/image-01.jpg" alt="alto" />
+          <div class="post-item__content">
             <a href="#"><h3 class="post-title">Title</h3></a>
             <button class="btn btn-popup-call-master">Вызвать мастера</button>
             <a href="#" class="post-excerpt">excerpt</a>
@@ -46,7 +48,8 @@ $url = get_template_directory_uri();
           </div>
         </div>
         <div class="post-item">
-          <div class="post-item__content" style="background: url('<?= $url; ?>/assets/img/block-01/bg-1920.jpg') center / cover no-repeat;">
+          <img class="post-item__image" src="<?= $url; ?>/assets/img/block-03/image-01.jpg" alt="alto" />
+          <div class="post-item__content">
             <a href="#"><h3 class="post-title">Title</h3></a>
             <button class="btn btn-popup-call-master">Вызвать мастера</button>
             <a href="#" class="post-excerpt">excerpt</a>
@@ -54,7 +57,8 @@ $url = get_template_directory_uri();
           </div>
         </div>
         <div class="post-item">
-          <div class="post-item__content" style="background: url('<?= $url; ?>/assets/img/block-01/bg-1920.jpg') center / cover no-repeat;">
+          <img class="post-item__image" src="<?= $url; ?>/assets/img/block-03/image-01.jpg" alt="alto" />
+          <div class="post-item__content">
             <a href="#"><h3 class="post-title">Title</h3></a>
             <button class="btn btn-popup-call-master">Вызвать мастера</button>
             <a href="#" class="post-excerpt">excerpt</a>
@@ -62,7 +66,8 @@ $url = get_template_directory_uri();
           </div>
         </div>
         <div class="post-item">
-          <div class="post-item__content" style="background: url('<?= $url; ?>/assets/img/block-01/bg-1920.jpg') center / cover no-repeat;">
+          <img class="post-item__image" src="<?= $url; ?>/assets/img/block-03/image-01.jpg" alt="alto" />
+          <div class="post-item__content">
             <a href="#"><h3 class="post-title">Title</h3></a>
             <button class="btn btn-popup-call-master">Вызвать мастера</button>
             <a href="#" class="post-excerpt">excerpt</a>
