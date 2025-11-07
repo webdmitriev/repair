@@ -211,5 +211,21 @@ $url = get_template_directory_uri();
     </div>
   </section>
 
+  <section class="block-08 pos-r w-100p z-section" id="block-08">
+    <div class="container">
+      <h3 class="block-title">Свяжитесь с нами</h3>
+
+      <div class="line-wrap df-sp-fs w-100p">
+        <?= do_shortcode('[contact-form-7 id="9e47d80" title="Contacts"]'); ?>
+
+        <div class="block-content">
+          <span class="block-content__gift">мы поможем</span>
+          <span class="block-content__title">Остались вопросы</span>
+          <span class="block-content__text">Не откладывайте <br/>решение проблемы! <br/><br/>Мы с радостью поможем разобраться в поломке и найдем удобное для вас время визита.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <?php
 get_footer();

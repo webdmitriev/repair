@@ -2,175 +2,154 @@
   position: relative;
   display: block;
   width: 100%;
-  .form-title {
-    display: block;
-    width: 100%;
-    margin-bottom: 16px;
-    font-family: var(--font-family);
-    font-weight: 600;
-    font-size: 28px;
-    line-height: var(--font-height);
-    color: var(--black-color);
-  }
-  .form-group {
-    display: block;
-    width: 100%;
-    .form-group_label {
+  .wpcf7-form {
+    .wpcf7-form-control-wrap {
+      position: relative;
       display: block;
       width: 100%;
-      margin-bottom: 4px;
-      padding-left: 14px;
-      font-family: var(--font-family);
-      font-weight: 500;
-      font-size: var(--font-size);
-      line-height: var(--font-height);
-      color: var(--black-color);
-    }
-    input[type="text"],
-    input[type="email"] {
-      display: block;
-      width: 100%;
-      padding: 10px 14px;
-      font-family: var(--font-family);
-      font-weight: 500;
-      font-size: var(--font-size);
-      line-height: var(--font-height);
-      color: var(--black-color);
-      background-color: var(--white-color);
-      border-radius: 24px;
-      border: 1px solid var(--white-color);
-      &::placeholder {
-        color: var(--gray-color);
-      }
-    }
-    input[type="checkbox"] {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      width: 80px;
-      height: 40px;
-      opacity: 0;
-      z-index: 2;
-    }
-    input[type="checkbox"]:checked + .wpcf7-list-item-label {
-      &:before {
-        background-color: var(--accent-color);
-        border-color: var(--accent-color);
-      }
-      &:after {
-        animation: checkbox-animate 0.8s ease forwards;
-      }
-    }
-    input[type="submit"] {
-      display: block;
-      max-width: 100%;
-      min-width: 240px;
-      padding: 8px 64px;
-      font-family: var(--font-family);
-      font-size: 18px;
-      line-height: var(--font-height);
-      text-align: center;
-      color: var(--white-color);
-      background-color: var(--accent-color);
-      border: none;
-      border-radius: 32px;
-      transition: all 0.2s ease;
-    }
-    .wpcf7-not-valid-tip {
-      width: 100%;
-      padding-left: 14px;
-      font-family: var(--font-family);
-      font-weight: var(--font-weight);
-      font-size: 14px;
-      color: red;
-    }
-    &.form-group-input {
-      margin-bottom: 16px;
-    }
-    &.form-group-checkbox {
-      margin-bottom: 24px;
-      span {
+      input,
+      textarea {
         display: block;
         width: 100%;
-        max-width: 100%;
-        margin-left: 0;
+        padding: 8px 16px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.3;
+        color: var(--text-color);
+        &::placeholder {
+          color: var(--text-color);
+        }
       }
+      input {
+        padding-right: 52px;
+        border-bottom: 1px solid var(--text-color);
+      }
+      textarea {
+        height: 110px;
+        padding-top: 12px;
+        border: 1px solid var(--text-color);
+      }
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+    [data-name="your-name"]:after,
+    [data-name="your-phone"]:after,
+    [data-name="your-address"]:after,
+    [data-name="your-time"]:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 4px;
+      display: block;
+      width: 40px;
+      height: 40px;
+    }
+    [data-name="your-name"]:after {
+      background: url("../img/icons/icon-user.svg") center / contain no-repeat;
+    }
+    [data-name="your-phone"]:after {
+      background: url("../img/icons/icon-phone.svg") center / contain no-repeat;
+    }
+    [data-name="your-address"]:after {
+      background: url("../img/icons/icon-map.svg") center / contain no-repeat;
+    }
+    [data-name="your-time"]:after {
+      background: url("../img/icons/icon-time.svg") center / contain no-repeat;
+    }
+    .form-policy {
+      display: block;
+      width: 100%;
+      margin-bottom: 16px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--text-color);
+      a {
+        text-decoration: underline;
+        color: var(--text-color);
+      }
+    }
+    .wpcf7-form-control .wpcf7-list-item {
+      margin-left: 0;
       label {
-        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: center;
-        gap: 20px;
-        width: 100%;
-      }
-      .wpcf7-list-item-label {
-        padding-left: 100px;
-        &:before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          display: block;
-          width: 80px;
-          height: 40px;
-          background-color: #c4c4c4;
-          border: 3px solid #c4c4c4;
-          border-radius: 100px;
-          transition: all 0.4s ease;
+        align-items: flex-start;
+        input {
+          appearance: none;
+          display: none;
         }
-        &:after {
-          content: "";
-          position: absolute;
-          top: 3px;
-          left: 3px;
+        .wpcf7-list-item-label {
+          position: relative;
           display: block;
-          width: 34px;
-          height: 34px;
-          background-color: #ffffff;
-          border-radius: 100px;
-          transition: all 0.4s ease;
+          width: 100%;
+          padding-left: 34px;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.5;
+          color: var(--text-color);
+          &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid var(--text-color);
+            transition: all 0.4s ease;
+          }
+        }
+        input:checked ~ .wpcf7-list-item-label:before {
+          border-width: 8px;
         }
       }
     }
-    &.form-group-submit {
-      position: relative;
-      input {
-        margin: 0 auto;
-      }
-      .wpcf7-spinner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: 0;
-        transform: translate(-50%, -50%);
-      }
+    .text-hint {
+      margin-top: 20px;
+      font-size: 13px;
     }
+  }
+  .wpcf7-not-valid-tip {
+    font-size: 14px;
   }
   form.invalid .wpcf7-response-output,
   form.unaccepted .wpcf7-response-output,
   form.payment-required .wpcf7-response-output,
   form.sent .wpcf7-response-output {
     font-size: 12px;
-    color: var(--black-color);
-    border-color: var(--accent-color);
+    color: var(--text-color);
+    border-color: var(--accent-01);
   }
 }
 
-@keyframes checkbox-animate {
-  0% {
-    left: 3px;
+@media (max-width: 1680px) {
+}
+@media (max-width: 1366px) {
+}
+@media (max-width: 1199px) {
+  .wpcf7 .wpcf7-form .text-hint {
+    text-align: center;
   }
-  10% {
-    left: 3px;
-    width: 44px;
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
+  .wpcf7 .wpcf7-form .wpcf7-form-control-wrap input,
+  .wpcf7 .wpcf7-form .wpcf7-form-control-wrap textarea {
+    font-size: 15px;
   }
-  90% {
-    left: 43px;
-  }
-  100% {
-    left: 43px;
-    width: 34px;
+  .wpcf7 .wpcf7-form .form-policy {
+    font-size: 13px;
   }
 }
