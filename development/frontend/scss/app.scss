@@ -12,7 +12,7 @@
 @use "./data/wpcf7";
 
 // components
-// @use "components/block-title";
+@use "components/block-title";
 @use "./components/h1";
 @use "./components/h2";
 @use "./components/sub_title";
@@ -25,6 +25,7 @@
 
 // MGU blocks
 @use "./blocks/block-01";
+@use "./blocks/block-02";
 
 // animations
 @use "./data/animations";
