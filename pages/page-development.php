@@ -152,5 +152,31 @@ $url = get_template_directory_uri();
     </div>
   </section>
 
+  <section class="block-06 pos-r w-100p z-section" id="block-06">
+    <div class="container">
+      <div class="block__title pos-r df-sp-ce w-100p" data-title="Юрид. моменты">
+        <h2 class="h2">Юридические моменты</h2>
+        <a href="#" class="btn btn-accent">add</a>
+      </div>
+
+      <div class="line-wrap df-sp-fs w-100p">
+        <div class="reused block-image"><img src="https://stiralka-mamayka.ru/wp-content/uploads/2025/10/image-01-2.jpg" alt="alto" class="block-image__img" /></div>
+        <div class="reused block-content">
+          <p class="text">Прозрачные отношения с клиентами. <br/><br/>Что включает договор: <br/>— Подробное описание выполненных работ <br/>— Список установленных запчастей (если есть) <br/>— Стоимость ремонта и порядок оплаты <br/>— Срок действия гарантии</p>
+
+          <div class="block__items df-sp-fs w-100p">
+            <div class="block__item">
+              <img src="https://stiralka-mamayka.ru/wp-content/uploads/2025/10/icon-05-default.svg" alt="" class="block-item__img" loading="lazy" decoding="async">
+              <p class="block__item-label">Официальный документ, подтверждающий ремонт</p>
+              <p class="block__item-descr">Вы получаете официальный акт и гарантийный талон с перечнем всех работ и заменённых деталей.</p>
+            </div>
+          </div>
+
+          <button class="btn btn-gradient btn-popup-call">Вызвать мастера</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
 <?php
 get_footer();
