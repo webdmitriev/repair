@@ -2,6 +2,221 @@
   position: relative;
   display: block;
   width: 100%;
-  padding-block: 40px;
+  padding-block: 60px 20px;
+  background-color: var(--dark-color);
   z-index: 80;
+  .line-wrap {
+    margin-bottom: 32px;
+    .footer-logotype {
+      gap: 8px;
+      max-width: 400px;
+      .logotype {
+        display: block;
+        width: 82px;
+        height: 74px;
+      }
+      .footer-logotype__content {
+        align-content: center;
+        max-width: calc(100% - 90px);
+        .footer-logotype__text {
+          display: block;
+          width: 100%;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 1.2;
+          color: var(--white-color);
+          &.bold {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .footer-menu {
+      gap: 28px;
+      max-width: max-content;
+      .menu-item {
+        display: block;
+        width: 100%;
+        max-width: max-content;
+        a {
+          display: block;
+          width: 100%;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.4;
+          color: var(--white-color);
+        }
+      }
+    }
+  }
+
+  .line-bottom {
+    .line-bottom__content {
+      display: block;
+      width: 100%;
+      &:nth-child(1) {
+        max-width: calc(100% - 320px);
+      }
+      &:nth-child(2) {
+        max-width: 280px;
+      }
+    }
+    .text {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+.fixed-call {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  width: 100%;
+  max-width: max-content;
+  padding: 8px 24px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.2;
+  color: var(--white-color);
+  background-color: var(--accent-01);
+  border-radius: 40px;
+  cursor: pointer;
+  z-index: 70;
+  &:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: var(--accent-02);
+    border-radius: 40px;
+    opacity: 0.4;
+    animation: fixed-button-before 2s ease infinite;
+    z-index: -1;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    background-color: var(--accent-02);
+    border-radius: 40px;
+    opacity: 0.4;
+    animation: fixed-button-after 2s ease infinite;
+    z-index: -1;
+  }
+}
+
+@keyframes fixed-button-before {
+  0% {
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+  }
+  50% {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+  }
+}
+
+@keyframes fixed-button-after {
+  0% {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+  }
+  50% {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer {
+    padding-top: 50px;
+  }
+  .footer .line-bottom .line-bottom__content:nth-child(2) {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+    max-width: 100%;
+    margin-bottom: 24px;
+    .text {
+      max-width: max-content;
+    }
+  }
+  .footer .line-bottom .line-bottom__content:nth-child(1) {
+    order: 2;
+    max-width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .footer .line-wrap .footer-logotype,
+  .footer .line-wrap {
+    margin-bottom: 24px;
+  }
+  .footer .line-wrap .footer-menu {
+    max-width: 100%;
+  }
+  .footer .line-bottom .line-bottom__content:nth-child(1) .text {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .footer .line-wrap .footer-menu {
+    gap: 24px;
+  }
+  .footer .line-wrap .footer-menu .menu-item a {
+    font-size: 13px;
+  }
+  .footer .line-bottom .line-bottom__content:nth-child(2) {
+    gap: 16px;
+  }
+  .footer .line-bottom .line-bottom__content:nth-child(2) .text {
+    color: var(--white-color);
+  }
+
+  .fixed-call {
+    padding: 6px 16px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 460px) {
+}
+@media (max-width: 400px) {
 }

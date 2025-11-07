@@ -14,10 +14,17 @@ $url = get_template_directory_uri();
 ?>
 		<div style="display: block; width: 100%; height: 400px;"></div>
 
-		<footer class="footer" style="display: none;">
+		<footer class="footer">
 			<div class="container">
-				<div class="line-wrap">
-					<a href="<?php echo get_home_url( null, '/' ); ?>" class="logotype">logotype</a>
+				<div class="line-wrap df-sp-ce w-100p">
+					<div class="footer-logotype df-fs-ce w-100p">
+						<a href="<?php echo get_home_url(null, '/'); ?>" class="logotype"><img src="<?= $url; ?>/assets/img/header/logotype.svg" alt="<?= $_ALT; ?>" /></a>
+						<div class="footer-logotype__content df-ce-ce w-100p">
+							<?php if(true): ?><span class="footer-logotype__text">г. РОСТОВ-НА-ДОНУ</span><?php endif; ?>
+							<?php if(true): ?><span class="footer-logotype__text bold">РЕМОНТ БЫТОВОЙ</span><?php endif; ?>
+							<?php if(true): ?><span class="footer-logotype__text">ТЕХНИКИ</span><?php endif; ?>
+						</div>
+					</div>
 
 					<?php
 						wp_nav_menu( [
@@ -26,7 +33,7 @@ $url = get_template_directory_uri();
 							'container'       => '',
 							'container_class' => '',
 							'container_id'    => '',
-							'menu_class'      => 'footer-menu',
+							'menu_class'      => 'footer-menu df-fs-ce w-100p',
 							'menu_id'         => '',
 							'echo'            => true,
 							'fallback_cb'     => 'wp_page_menu',
@@ -39,31 +46,21 @@ $url = get_template_directory_uri();
 							'walker'          => '',
 						] );
 					?>
-
-					<div class="footer-contacts">
-						<?php if ($phone = get_theme_phone()): ?>
-							<a href="tel:<?php echo esc_attr($phone); ?>">Phone: <?php echo esc_attr($phone); ?></a>
-						<?php endif; ?>
-
-						<?php if ($email = get_theme_email()): ?>
-							<a href="mailto:<?php echo esc_attr($email); ?>">Email: <?php echo esc_attr($email); ?></a>
-						<?php endif; ?>
+				</div>
+				<div class="line-bottom df-sp-fs w-100p">
+					<div class="line-bottom__content">
+						<span class="text">© <?php echo date('Y'); ?> Все права защищены.</span>
+						<?php if(true): ?><span class="text">Сайт является информационной площадкой по приёму заявок на ремонт бытовой техники. <br/>Заявки, оставленные на сайте, передаются независимым мастерам и сервисным организациям.</span><?php endif; ?>
 					</div>
-
-					<?php $partners = get_theme_partners(); if (!empty($partners)): ?>
-						<div class="footer-partners">
-							<?php foreach ($partners as $partner): if (!empty($partner['link'])): ?>
-								<a href="<?php echo esc_url($partner['link']); ?>" target="_blank" rel="noopener noreferrer"><?php echo esc_html($partner['text']); ?></a>
-        			<?php endif; endforeach; ?>
-						</div>
-					<?php endif; ?>
-
-					<div class="footer-bottom">
-						<p>© <?php echo date('Y'); ?> WWW | All Right reserved</p>
+					<div class="line-bottom__content">
+						<a href="<?php echo get_home_url(null, '/privacy-policy'); ?>" class="text" style="text-align: right;">Политика конфиденциальности</a>
+						<a href="<?php echo get_home_url(null, '/user-agreement'); ?>" class="text" style="text-align: right;">Пользовательское соглашение</a>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<button class="fixed-call btn-popup-call">Срочный вызов мастера</button>
 
 	</div><!-- #app -->
 
